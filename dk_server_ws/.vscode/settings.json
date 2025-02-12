@@ -1,0 +1,19 @@
+{
+	// Python settings
+	"python.analysis.autoSearchPaths": true,
+	"python.analysis.diagnosticSeverityOverrides": {
+		"reportMissingImports": "none"
+	},
+	"python.analysis.extraPaths": [
+		"${workspaceFolder}/dk-server/src"
+	],
+	"python.envFile": "${workspaceFolder}/dk-server/.env",
+	"python.terminal.activateEnvironment": true,
+	"python.defaultInterpreterPath": "${workspaceFolder}/dk-server/.venv/Scripts/python",
+	// Test settings
+	"python.testing.pytestEnabled": true,
+	"python.testing.unittestEnabled": false,
+	"python.testing.cwd": "${workspaceFolder}/dk-server/tests",
+	"python.testing.pytestPath": "${workspaceFolder}/dk-server/.venv/Scripts/pytest",
+	"python.testing.autoTestDiscoverOnSaveEnabled": true,
+}

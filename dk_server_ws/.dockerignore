@@ -1,0 +1,32 @@
+# Docker Build tools
+docker_run.sh
+docker_run.ps1
+
+
+# Python related
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+.mypy_cache
+
+# Dev related
+ruff.toml
+.git
+.gitignore
+.vscode
+tests
+*.cover
+*.log
+.pytest_cache
+docs
+.obsidian
