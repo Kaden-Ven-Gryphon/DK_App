@@ -16,4 +16,7 @@
 	"python.testing.cwd": "${workspaceFolder}/dk-server/tests",
 	"python.testing.pytestPath": "${workspaceFolder}/dk-server/.venv/Scripts/pytest",
 	"python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+
+	
 }

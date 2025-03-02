@@ -1,11 +1,42 @@
 {
 	"folders": [
 		{
+			"name": "ROOT",
 			"path": "."
 		},
 		{
+			"name": "API_Server",
 			"path": "dk_server_ws"
 		}
 	],
-	"settings": {}
+	"settings": {
+	
+		// Action Buttons
+
+		"actionButtons": {
+			"defaultColor": "#ff0034", // Can also use string color names.
+			"loadNpmCommands":false, // Disables automatic generation of actions for npm commands.
+			"reloadButton":"♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+			"commands": [
+				{
+					"cwd": "${workspaceFolder}",
+					"name": "$(triangle-right) Run Container",
+					"color": "green",
+					"command": ".\\scripts\\run.ps1",
+				},
+				{
+					"cwd": "${workspaceFolder}",
+					"name": "$(tools) Bash Container",
+					"color": "white",
+					"command": ".\\scripts\\run.ps1 /bin/bash",
+				},
+				{
+					"cwd": "${workspaceFolder}",
+					"name": "$(close)Docker Close",
+					"color": "red",
+					"command": ".\\scripts\\clean.ps1"
+				}
+			]
+		}
+	}
 }
